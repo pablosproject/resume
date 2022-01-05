@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1641307106 "/Users/paolo/Personal_Projects/CV/sidebarleft/main.tex" "main.pdf" "main" 1641307107
+["pdflatex"] 1641395120 "/Users/paolo/Personal_Projects/CV/sidebarleft/main.tex" "main.pdf" "main" 1641395121
   "/Users/paolo/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1641303445 243320 06173ab5d9ee0853dcab6ff17a25624d ""
   "/Users/paolo/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1641203061 6554883 da6ab374e77cec9c6eded44fe4bf7230 ""
   "/Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1641303237 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -178,10 +178,10 @@
   "/Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xifthen/xifthen.sty" 1641203073 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1641202488 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "/Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xstring/xstring.sty" 1641303221 123 a302f2c651a95033260db60e51527ae8 ""
-  "/Users/paolo/Personal_Projects/CV/sidebarleft/main.tex" 1641307105 23129 5da7872c59f439eaf060abaf98de482b ""
-  "main.aux" 1641307107 725 3b090fdc8bb55f1892b0c25fe88eba78 "pdflatex"
-  "main.out" 1641307107 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1641307105 23129 5da7872c59f439eaf060abaf98de482b ""
+  "/Users/paolo/Personal_Projects/CV/sidebarleft/main.tex" 1641395120 22612 1659ebaf004352cee30d1e64491dbe4a ""
+  "main.aux" 1641395121 725 3b090fdc8bb55f1892b0c25fe88eba78 "pdflatex"
+  "main.out" 1641395121 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1641395120 22612 1659ebaf004352cee30d1e64491dbe4a ""
   "untitled.jpg" 1641306574 7815 b73cc192b909897d541bc5dc110d5072 ""
   (generated)
   "main.aux"
