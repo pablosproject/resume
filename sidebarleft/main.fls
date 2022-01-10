@@ -947,13 +947,7 @@ INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/r
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/raleway/TS1Raleway-TLF.fd
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/raleway/TS1Raleway-TLF.fd
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/impallari/raleway/Raleway-Regular-tlf-ts1.tfm
-INPUT ./untitled.jpg
-INPUT ./untitled.jpg
-INPUT untitled.jpg
-INPUT ./untitled.jpg
-INPUT ./untitled.jpg
-INPUT ./untitled.jpg
-INPUT ./untitled.jpg
+INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/impallari/raleway/Raleway-Italic-tlf-t1.tfm
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontawesome/ufontawesometwo.fd
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontawesome/ufontawesometwo.fd
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontawesome/ufontawesometwo.fd
@@ -972,15 +966,19 @@ INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/im
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/impallari/raleway/Raleway-Bold-tlf-t1--base.tfm
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/impallari/raleway/Raleway-Regular-tlf-ts1.vf
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/impallari/raleway/Raleway-Regular-tlf-ts1--base.tfm
+INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/vf/impallari/raleway/Raleway-Italic-tlf-t1.vf
+INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/impallari/raleway/Raleway-Italic-tlf-t1--base.tfm
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
+INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/raleway/a_bzmckq.enc
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/fontawesome/fontawesometwo.enc
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/raleway/a_2bcjq6.enc
-INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/enc/dvips/raleway/a_bzmckq.enc
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/fontawesome/FontAwesome.pfb
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/fontawesome/FontAwesome.pfb
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/impallari/raleway/Raleway-Bold.pfb
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/impallari/raleway/Raleway-Bold.pfb
+INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/impallari/raleway/Raleway-Italic.pfb
+INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/impallari/raleway/Raleway-Italic.pfb
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/impallari/raleway/Raleway-Regular.pfb
 INPUT /Users/paolo/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/impallari/raleway/Raleway-Regular.pfb
