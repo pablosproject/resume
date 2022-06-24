@@ -56,6 +56,7 @@
 %\usepackage[default]{comfortaa}
 %\usepackage{cmbright}
 \usepackage[default]{raleway}
+\usepackage{fontawesome}
 %\usepackage{fetamont}
 %\usepackage[default]{gillius}
 %\usepackage[light,math]{iwona}
@@ -201,6 +202,10 @@
 
 \newcommand{\extLink}[2]{
 	\textcolor{maincol}{\href{#1}{#2}}
+}
+
+\newcommand{\extLinkIcon}[2]{
+	\textcolor{maincol}{\href{#1}{#2 \,\scriptsize{\faExternalLink} }}
 }
 %----------------------------------------------------------------------------------------
 %	 CV LIST
@@ -373,7 +378,7 @@ Orientato alle esigenze del cliente e con una metodologia di lavoro strutturata,
 \cvevent
 	{Gen 2021 - Giu 2022}
 	{Linux/FullStack Developer - iOS Developer}
-	{\href{https://www.masterchart.it/}{Masterchart}}
+	{\extLinkIcon{https://www.masterchart.it/}{Masterchart}}
 	{Hybrid Remote}
 	{Design ed implementazione di un sistema di controllo degli accessi per il settore bancario, composto da differenti applicativi frontend e da una distribuzione linux creata ad-hoc per kiosk e soluzioni Digital Signage.}
 	{\cvlist{
@@ -385,7 +390,7 @@ Orientato alle esigenze del cliente e con una metodologia di lavoro strutturata,
 \cvevent
 	{Mar 2021 - Giu 2021}
 	{Linux/FullStack developer}
-	{\extLink{https://41north.dev/}{41 North}}
+	{\extLinkIcon{https://41north.dev/}{41 North}}
 	{Full Remote}
 	{Creazione di una distribuzione linux custom (basata su RaspiOS) pensata per l'installazione in soluzioni bartop per retro-gaming. Il sistema include anche un applicativo backend per la distribuzione di ROM legali. Maggiori dettagli a \extLink{https://talentec.es}{questo link}.}
 	{}
@@ -395,7 +400,7 @@ Orientato alle esigenze del cliente e con una metodologia di lavoro strutturata,
 \cvevent
 	{Gen 2020 - Dic 2020}
 	{Mobile and Full Stack Software Engineer}
-	{\href{https://codermine.com/}{Codermine}}
+	{\extLinkIcon{https://codermine.com/}{Codermine}}
 	{Hybrid Remote}
 	{Design ed implementazione di soluzioni mobile e web per clienti terzi. Leadership del team web, con attività che includono: menroting di sviluppatori junior, introduzione di pratiche DevOps, miglioramento del ciclo di sviluppo e introduzione di CI/CD e test automatici.\\
 	 Qui un esempio di alcuni dei prodotti sviluppati:}
@@ -410,7 +415,7 @@ Orientato alle esigenze del cliente e con una metodologia di lavoro strutturata,
 \cvevent
 	{Ago 2019 - Dic 2019}
 	{Mobile / FullStack Software Engineer}
-	{\href{https://www.palmabit.com/en}{Palmabit}}
+	{\extLinkIcon{https://www.palmabit.com/en}{Palmabit}}
 	{Hybrid Remote}
 	{Consulente full stack.}
 	{\cvlist{
@@ -423,7 +428,7 @@ Orientato alle esigenze del cliente e con una metodologia di lavoro strutturata,
 \cvevent
 	{Lug 2015 - Lug 2019}
 	{Mobile / Full Stack Software Engineer}
-	{\href{https://mobilejazz.com/}{MobileJazz}}
+	{\extLinkIcon{https://mobilejazz.com/}{MobileJazz}}
 	{Full Remote}
 	{Consulenza tecnica e manageriale per clienti basati in Europa e Stati Uniti. Nel percorso aziendale sono stati ricoperti i ruoli di sviluppatore iOS nel team mobile, in seguito sviluppatore team backend utilizzando tecnologie basate su Node.js ed infine sviluppo frontend nel team web. Responsabile per il DevOps, l'automazione e la creazione di sistemi di build automatica nei vari team. \\
 	Alcuni degli esempi più rilevanti dei prodotti creati: }
@@ -451,31 +456,32 @@ Orientato alle esigenze del cliente e con una metodologia di lavoro strutturata,
 %----------------------------------------------------------------------------------------
 \cvsection{Competenze}
 
-\textbf{Linguaggi di programmazione}\\
-\textcolor{maincol}{\textit{Esperto}}: Typescript, Swift, Objective-C/C++\\
-\textcolor{maincol}{\textit{Buona conoscenza}}: C, C++, Javascript, Python\\
-\textcolor{maincol}{\textit{Familiarità}}: Go, Ruby \\ 
-
-\textbf{DevOps}: GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
-
-\textbf{Frameworks}: Cocoa, Cocoa Touch e framework iOS, NodeJS, NestJS, ExpressJS, Angular \\
-
-\textbf{DB}: MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search, TimeScaleDB \\
-
-\textbf{Conainers}: Docker, Docker Compose, Kubernetes \\
-
-\textbf{Altre competenze}: Amministrazione Linux, AWS (S3, lambda, IoT, ECS), gestione di server cloud (Digital Ocean, Linode)
- 
+\begin{tabular*}{1\mpwidth}{p{1\mpwidth}  r}
+	\textbf{Linguaggi di programmazione}\\
+	\textcolor{maincol}{\textit{Esperto}}: Typescript, Swift, Objective-C/C++\\
+	\textcolor{maincol}{\textit{Buona conoscenza}}: C, C++, Javascript, Python\\
+	\textcolor{maincol}{\textit{Familiarità}}: Go, Ruby \\ 
+	\\
+	\textbf{DevOps}: GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
+	\\
+	\textbf{Frameworks}: Cocoa, Cocoa Touch e framework iOS, NodeJS, NestJS, ExpressJS, Angular \\
+	\\
+	\textbf{DB}: MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search, TimeScaleDB \\
+	\\
+	\textbf{Conainers}: Docker, Docker Compose, Kubernetes \\
+	\\
+	\textbf{Altre competenze}: Amministrazione Linux, AWS (S3, lambda, IoT, ECS), gestione di server cloud (Digital Ocean, Linode)
+\end{tabular*}\\[8pt] 
 
 %---------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
 \cvsection{Progetti personali e certificazioni}
 \cvlist{
-	\item \textbf{Brevetto US} Hazard Recognition (Patent US11093747B2), \extLink{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2
-}{link}
-	\item Fondatore di \extLink{http://pragmamark.org/}{PragmaMark}: la prima conferenza italiana su iOS/macOSX
-	\item Mentor presso \extLink{http://www.coderdojobrescia.it/}{CoderDojo Brescia}
+	\item \textbf{Brevetto US} Hazard Recognition (\extLinkIcon{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2
+	}{Patent US11093747B2})
+	\item Fondatore di \extLinkIcon{http://pragmamark.org/}{PragmaMark}: la prima conferenza italiana su iOS/macOSX
+	\item Mentor presso \extLinkIcon{http://www.coderdojobrescia.it/}{CoderDojo Brescia}
 }
 
 

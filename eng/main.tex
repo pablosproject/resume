@@ -56,6 +56,7 @@
 %\usepackage[default]{comfortaa}
 %\usepackage{cmbright}
 \usepackage[default]{raleway}
+\usepackage{fontawesome}
 %\usepackage{fetamont}
 %\usepackage[default]{gillius}
 %\usepackage[light,math]{iwona}
@@ -201,6 +202,10 @@
 
 \newcommand{\extLink}[2]{
 	\textcolor{maincol}{\href{#1}{#2}}
+}
+
+\newcommand{\extLinkIcon}[2]{
+	\textcolor{maincol}{\href{#1}{#2 \,\scriptsize{\faExternalLink} }}
 }
 %----------------------------------------------------------------------------------------
 %	 CV LIST
@@ -372,8 +377,8 @@ Customer-oriented and structured method of working, focused on quality and maint
 
 \cvevent
 	{Jan 2021 - Now}
-	{Linux/FullStack developer - iOS Developer}
-	{\href{https://www.masterchart.it/}{Masterchart}}
+	{Mobile/Linux/FullStack Engineer}
+	{\extLinkIcon{https://www.masterchart.it/}{Masterchart}}
 	{Hybrid Remote}
 	{Designed and built a complete access management system for banks, composed of several frontend applications and a custom Linux distribution to power personalized in-site kiosk and queue monitor.}
 	{\cvlist{
@@ -384,8 +389,8 @@ Customer-oriented and structured method of working, focused on quality and maint
 
 \cvevent
 	{Mar 2021 - Jun 2021}
-	{Linux/FullStack developer}
-	{\extLink{https://41north.dev/}{41 North}}
+	{Linux/FullStack Engineer}
+	{\extLinkIcon{https://41north.dev/}{41 North}}
 	{Full Remote}
 	{Built a custom Linux distro (based on RaspiOS) to be installed in custom bartop retro-gaming solutions. The system also includes a backend application that stores and distributes legal ROMs. More details at \extLink{https://talentec.es}{this link}.}
 	{}
@@ -395,10 +400,10 @@ Customer-oriented and structured method of working, focused on quality and maint
 \cvevent
 	{Jan 2020 - Dec 2020}
 	{Mobile and Full Stack Software Engineer}
-	{\href{https://codermine.com/}{Codermine}}
+	{\extLinkIcon{https://codermine.com/}{Codermine}}
 	{Hybrid Remote}
 	{Built products for third-party clients with mobile and web technologies. Lead a small development team: mentored junior developers, introduced DevOps practices, and improved release cycle and automated testing.\\
-	 Some of the products build include:}
+	 Some of the products build:}
 	{\cvlist{
 		\item Alarm system configuration app (\extLink{https://apps.apple.com/it/app/inxpect-security/id1334620177}{link})
 		\item Invoice trading platform (frontend and backend) (\extLink{https://cashme.it/}{link})
@@ -409,8 +414,8 @@ Customer-oriented and structured method of working, focused on quality and maint
 
 \cvevent
 	{Aug 2019 - Dec 2019}
-	{Mobile / FullStack Software Engineer}
-	{\href{https://www.palmabit.com/en}{Palmabit}}
+	{Mobile/FullStack Software Engineer}
+	{\extLinkIcon{https://www.palmabit.com/en}{Palmabit}}
 	{Hybrid Remote}
 	{Full-Stack consultant.}
 	{\cvlist{
@@ -423,13 +428,13 @@ Customer-oriented and structured method of working, focused on quality and maint
 \cvevent
 	{Jul 2015 - Jul 2019}
 	{Mobile / Full Stack Software Engineer}
-	{\href{https://mobilejazz.com/}{MobileJazz}}
+	{\extLinkIcon{https://mobilejazz.com/}{MobileJazz}}
 	{Full Remote}
-	{Technical and management consultancy for US and European clients. I worked as an iOS developer in the mobile team, then moved to the backend team using Node.JS-based technologies and then worked in web team. I was also responsible for DevOps, automation, and custom build solutions in each team I worked in. \\
-	Relevant examples of products I worked on: }
+	{Technical and managerial consultancy for US and European clients. Worked in several teams: iOS developer in the mobile team, NodeJS developer in the backend, and frontend developer in the web team. Responsible for DevOps, automation, and custom build solutions in each team. \\
+    Relevant examples of products developed: }
 	{\cvlist{
 		\item IoT custom light control solution (\extLink{https://www.simonelectric.com/intl/control-systems/scena}{link}, \extLink{https://mobilejazz.com/blog/how-we-made-remote-development-work-with-physical-devices/}{blog post}) 
-		\item Real-time noise monitoring platform (\extLink{http://emmadb.com/}{link})
+		\item Real-time noise monitoring platform (\extLink{http://wp.emmadb.com/}{link})
 		\item Rehab enhancement platform (\extLink{https://peerwell.co/}{link})
 		\item TENS remote control application (\extLink{https://hollywog.com/products/witouch}{link})
 		\item Tinder-like social networking application (\extLink{https://apps.apple.com/us/app/koko-dating-flirt-chat-app/id855200334}{link}) 	}}
@@ -451,20 +456,22 @@ Customer-oriented and structured method of working, focused on quality and maint
 %----------------------------------------------------------------------------------------
 \cvsection{SKILLS}
 
-\textbf{Programming Languages}\\
-\textcolor{maincol}{\textit{Expert}}: Swift, Objective-C/C++, Typescript \\
-\textcolor{maincol}{\textit{Advanced}}: C, C++, Javascript, Python\\
-\textcolor{maincol}{\textit{Familiar}}: Go, Ruby \\ 
-
-\textbf{DevOps}: GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
-
-\textbf{Frameworks}: Cocoa, Cocoa Touch and iOS frameworks, NodeJS, NestJS, ExpressJS, Angular \\
-
-\textbf{DB}: MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search, TimeScaleDB \\
-
-\textbf{Conainers}: Docker, Docker Compose, Kubernetes \\
-
-\textbf{Other skills}: Linux administration, AWS services (S3, lambda, IoT, ECS), cloud based server management (Digital Ocean, Linode)
+\begin{tabular*}{1\mpwidth}{p{1\mpwidth}  r}
+	\textbf{Programming Languages}\\
+	\textcolor{maincol}{\textit{Expert}}: Swift, Objective-C/C++, Typescript \\
+	\textcolor{maincol}{\textit{Advanced}}: C, C++, Javascript, Python\\
+	\textcolor{maincol}{\textit{Familiar}}: Go, Ruby \\ 
+	\\
+	\textbf{DevOps}: GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
+	\\
+	\textbf{Frameworks}: Cocoa, Cocoa Touch and iOS frameworks, NodeJS, NestJS, ExpressJS, Angular \\
+	\\
+	\textbf{DB}: MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search, TimeScaleDB \\
+	\\
+	\textbf{Conainers}: Docker, Docker Compose, Kubernetes \\
+	\\
+	\textbf{Other skills}: Linux administration, AWS services (S3, lambda, IoT, ECS), cloud based server management (Digital Ocean, Linode)
+\end{tabular*}\\[8pt]
  
 
 %---------------------------------------------------------------------------------------
@@ -472,10 +479,10 @@ Customer-oriented and structured method of working, focused on quality and maint
 %----------------------------------------------------------------------------------------
 \cvsection{Projects and achievements}
 \cvlist{
-	\item \textbf{US Patent} Hazard Recognition (Patent US11093747B2), \extLink{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2
-}{link}
-	\item Founder of \extLink{http://pragmamark.org/}{PragmaMark}: first iOS/MacOSX Italian developer conference
-	\item Mentor at \extLink{http://www.coderdojobrescia.it/}{CoderDojo Brescia}
+	\item \textbf{US Patent} Hazard Recognition (\extLinkIcon{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2
+	}{Patent US11093747B2}), 
+	\item Founder of \extLinkIcon{http://pragmamark.org/}{PragmaMark}: first iOS/MacOSX Italian developer conference
+	\item Mentor at \extLinkIcon{http://www.coderdojobrescia.it/}{CoderDojo Brescia}
 }
 
 
