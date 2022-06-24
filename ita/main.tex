@@ -274,36 +274,36 @@
 % param 5: work done (optional)
 % param 6: technologies include (optional)
 % param 7: achievements (optional)
-\newcommand{\cvevent}[7] {
+\newcommand{\cvevent}[8] {
 	
 	% we wrap this part in a parbox, so title and description are not separated on a pagebreak
 	% if you need more control on page breaks, remove the parbox
 	\parbox{\mpwidth}{
 		\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
 	 		\textcolor{black}{\textbf{#2}} & \colorbox{maincol}{\makebox[0.28\mpwidth]{\textcolor{white}{#1}}} \\
-			\textcolor{maincol}{\textbf{#3}} & \\
+			\textcolor{maincol}{\textbf{#3}} \ifthenelse{\isempty{#4}}{}{\textcolor{maincol}{\emph{- #4}}}  & \\
 		\end{tabular*}\\[8pt]
 	
-		\ifthenelse{\isempty{#4}}{}{
-			\cvtext{#4}\\
+		\ifthenelse{\isempty{#5}}{}{
+			\cvtext{#5}\\
 		}
-	}
-
-	\ifthenelse{\isempty{#5}}{}{
-		\vspace{4pt}
-		{#5}
 	}
 
 	\ifthenelse{\isempty{#6}}{}{
 		\vspace{4pt}
-		\cvtext{\textbf{Technologies include:}}\\
 		{#6}
 	}
 
 	\ifthenelse{\isempty{#7}}{}{
 		\vspace{4pt}
-		\cvtext{\textbf{Achievements include:}}\\
+		\cvtext{\textbf{Technologies include:}}\\
 		{#7}
+	}
+
+	\ifthenelse{\isempty{#8}}{}{
+		\vspace{4pt}
+		\cvtext{\textbf{Achievements include:}}\\
+		{#8}
 	}
 	\vspace{14pt}
 }
@@ -356,84 +356,92 @@
 %---------------------------------------------------------------------------------------
 %	PROFILE
 %----------------------------------------------------------------------------------------
-\cvsection{PROFILE}
+\cvsection{PROFILO}
 
-\cvtext{Software Engineering consultant with strong theoretical skills and a passion for OpenSource software.\\
+\cvtext{ Ingegnere del software con una solida preparazione tecnica e pratica, contribuisce e sostiene varie librerie OpenSource.\\
 
-More than ten years of experience building mobile and web applications. Working remotely since 2015.\\
+Oltre dieci anni di esperienza nella progettazione ed implementazione di applicazioni mobile e web. Lavoro remoto dal 2015.\\
 
-Customer-oriented and structured method of working, focused on quality and maintainability. Highly motivated to work in a team, both comfortable in big companies as in small teams.\\
+Orientato alle esigenze del cliente e con una metodologia di lavoro strutturata, focalizzata sulla qualità del codice e sulla manutenzione. Ottima capacità di lavoro in team, sia in grandi aziende che in team di piccola-media dimensione.
 }
 
 %---------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
-\cvsection{WORK EXPERIENCE}
+\cvsection{ESPERIENZE LAVORATIVE}
 
 \cvevent
-	{Jan 2021 - Now}
-	{Linux/FullStack developer}
+	{Gen 2021 - Giu 2022}
+	{Linux/FullStack Developer - iOS Developer}
 	{\href{https://www.masterchart.it/}{Masterchart}}
-	{Designed and built a complete access management system for banks, composed of several frontend applications and a custom Linux distribution to power personalized in-site kiosk and queue monitor.}
-	{}
+	{Hybrid Remote}
+	{Design ed implementazione di un sistema di controllo degli accessi per il settore bancario, composto da differenti applicativi frontend e da una distribuzione linux creata ad-hoc per kiosk e soluzioni Digital Signage.}
+	{\cvlist{
+		\item Piattaforma Prenotabanca (\extLink{https://www.masterchart.it/prenota-banca.html}{link})
+	}}
 	{}
 	{}
 
 \cvevent
-	{Mar 2021 - Jun 2021}
+	{Mar 2021 - Giu 2021}
 	{Linux/FullStack developer}
 	{\extLink{https://41north.dev/}{41 North}}
-	{Built a custom Linux distro (based on RaspiOS) to be installed in custom bartop solutions. The system also includes a backend application that stores and distributes legal ROMs. More details at \extLink{https://talentec.es}{this link}.}
+	{Full Remote}
+	{Creazione di una distribuzione linux custom (basata su RaspiOS) pensata per l'installazione in soluzioni bartop per retro-gaming. Il sistema include anche un applicativo backend per la distribuzione di ROM legali. Maggiori dettagli a \extLink{https://talentec.es}{questo link}.}
 	{}
 	{}
 	{}
 
 \cvevent
-	{Jan 2020 - Dec 2020}
+	{Gen 2020 - Dic 2020}
 	{Mobile and Full Stack Software Engineer}
 	{\href{https://codermine.com/}{Codermine}}
-	{Built products for third-party clients with mobile and web technologies. Lead a small development team: mentored junior developers, introduced DevOps practices, and improved release cycle and automated testing.\\
-	 Some of the products build includes:}
+	{Hybrid Remote}
+	{Design ed implementazione di soluzioni mobile e web per clienti terzi. Leadership del team web, con attività che includono: menroting di sviluppatori junior, introduzione di pratiche DevOps, miglioramento del ciclo di sviluppo e introduzione di CI/CD e test automatici.\\
+	 Qui un esempio di alcuni dei prodotti sviluppati:}
 	{\cvlist{
-		\item Alarm system configuration app (\extLink{https://apps.apple.com/it/app/inxpect-security/id1334620177}{link})
-		\item Invoice trading platform (frontend and backend) (\extLink{https://cashme.it/}{link})
-		\item AI-based KPI prediction platform (\extLink{https://vedrai.com/en/}{link})
+		\item App di configurazione per un sistema di allarmi radar (\extLink{https://apps.apple.com/it/app/inxpect-security/id1334620177}{link})
+		\item Piattaforma di trading di credito (frontend e backend) (\extLink{https://cashme.it/}{link})
+		\item Piattaforma di predizione KPI basata su intelligenza artificiale (\extLink{https://vedrai.com/en/}{link})
 	}}
 	{}
 	{}
 
 \cvevent
-	{Ago 2019 - Dec 2019}
+	{Ago 2019 - Dic 2019}
 	{Mobile / FullStack Software Engineer}
 	{\href{https://www.palmabit.com/en}{Palmabit}}
-	{Full-Stack consultant.}
+	{Hybrid Remote}
+	{Consulente full stack.}
 	{\cvlist{
-		\item Cirular Economy based delivery service (\extLink{https://www.siwego.com/}{Link})
-		\item Bluetooth powered chat application (\extLink{https://apps.apple.com/it/app/forcatch/id1372788996}{link})
+		\item Sistema di consegne basato su circular economy (\extLink{https://www.siwego.com/}{Link})
+		\item Applicativo di chat basato su Bluetooth (\extLink{https://apps.apple.com/it/app/forcatch/id1372788996}{link})
 	}}
 	{}
 	{}
 
 \cvevent
-	{Jul 2015 - Jul 2019}
+	{Lug 2015 - Lug 2019}
 	{Mobile / Full Stack Software Engineer}
 	{\href{https://mobilejazz.com/}{MobileJazz}}
-	{Worked remotely as an employee doing consultancy work for US and European clients. I worked as an iOS developer in the mobile team, then moved to backend using Node.JS based technologies and ended in web team doing Angular Frontend work. I was also responsible for DevOps, automation, and custom build solutions in each team I worked in. \\
-	Relevant examples of products I worked on: }
+	{Full Remote}
+	{Consulenza tecnica e manageriale per clienti basati in Europa e Stati Uniti. Nel percorso aziendale sono stati ricoperti i ruoli di sviluppatore iOS nel team mobile, in seguito sviluppatore team backend utilizzando tecnologie basate su Node.js ed infine sviluppo frontend nel team web. Responsabile per il DevOps, l'automazione e la creazione di sistemi di build automatica nei vari team. \\
+	Alcuni degli esempi più rilevanti dei prodotti creati: }
 	{\cvlist{
-		\item IoT custom light control solution (\extLink{https://www.simonelectric.com/intl/control-systems/scena}{link}, \extLink{https://mobilejazz.com/blog/how-we-made-remote-development-work-with-physical-devices/}{blog post}) 
-		\item Real-time noise monitoring platform (\extLink{http://emmadb.com/}{link})
-		\item Rehab enhancement platform (\extLink{https://peerwell.co/}{link})
-		\item TENS remote control application (\extLink{https://hollywog.com/products/witouch}{link})
-		\item Tinder-like social networking application (\extLink{https://apps.apple.com/us/app/koko-dating-flirt-chat-app/id855200334}{link}) 	}}
+		\item Sistema di controllo delle luci IoT(\extLink{https://www.simonelectric.com/intl/control-systems/scena}{link}, \extLink{https://mobilejazz.com/blog/how-we-made-remote-development-work-with-physical-devices/}{blog post}) 
+		\item Piattaforma di monitoraggio del rumore in real-time (\extLink{http://emmadb.com/}{link})
+		\item Piattaforma per la riabilitazione post-operatoria (\extLink{https://peerwell.co/}{link})
+		\item App per il controllo di un device TENS (\extLink{https://hollywog.com/products/witouch}{link})
+		\item Applicazione di social networking per incontri (\extLink{https://apps.apple.com/us/app/koko-dating-flirt-chat-app/id855200334}{link}) 	}}
 	{}
 	{}
 
 \cvevent
-	{May 2013 - Jun 2015}
+	{Mag 2013 - Giu 2015}
 	{iOS Developer}
 	{TilTap}
-	{Worked as iOS developer in a dedicated team inside a startup incubator. Built several MVP and product for early stage startups.}
+	{}
+	{Sviluppatore iOS in un team dedicato allo sviluppo di MVP all'interno di un incubatore di startup. Creazione di prodotti per startup in fase di definizione prodotto. }
 	{}
 	{}
 	{}
@@ -441,34 +449,33 @@ Customer-oriented and structured method of working, focused on quality and maint
 %---------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\cvsection{SKILLS}
+\cvsection{Competenze}
 
-\textbf{Programming Languages}\\
-\textcolor{maincol}{\textit{Expert}}: Typescript, Swift, Objective-C/C++\\
-\textcolor{maincol}{\textit{Advanced}}: C, C++, Javascript, Python\\
-\textcolor{maincol}{\textit{Familiar}}: Go, Ruby \\ 
+\textbf{Linguaggi di programmazione}\\
+\textcolor{maincol}{\textit{Esperto}}: Typescript, Swift, Objective-C/C++\\
+\textcolor{maincol}{\textit{Buona conoscenza}}: C, C++, Javascript, Python\\
+\textcolor{maincol}{\textit{Familiarità}}: Go, Ruby \\ 
 
-\textbf{DevOps}\\
-GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
+\textbf{DevOps}: GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
 
-\textbf{Frameworks} \\
-Cocoa, Cocoa Touch, NodeJS, NestJS, ExpressJS, Angular \\
+\textbf{Frameworks}: Cocoa, Cocoa Touch e framework iOS, NodeJS, NestJS, ExpressJS, Angular \\
 
-\textbf{DB} \\
-MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search \\
+\textbf{DB}: MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search, TimeScaleDB \\
 
-\textbf{Other} \\
-Docker, docker-compose, Linux administration, AWS services (S3, lambda, IoT, ECS), cloud based server management (Digital Ocean, Linode)
+\textbf{Conainers}: Docker, Docker Compose, Kubernetes \\
+
+\textbf{Altre competenze}: Amministrazione Linux, AWS (S3, lambda, IoT, ECS), gestione di server cloud (Digital Ocean, Linode)
+ 
 
 %---------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
-\cvsection{Projects and achievements}
+\cvsection{Progetti personali e certificazioni}
 \cvlist{
-	\item \textbf{US Patent} Hazard Recognition (Patent US11093747B2), \extLink{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2
+	\item \textbf{Brevetto US} Hazard Recognition (Patent US11093747B2), \extLink{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2
 }{link}
-	\item Founder of \extLink{http://pragmamark.org/}{PragmaMark}: first iOS/MacOSX Italian developer conference
-	\item Mentor at \extLink{http://www.coderdojobrescia.it/}{CoderDojo Brescia}
+	\item Fondatore di \extLink{http://pragmamark.org/}{PragmaMark}: la prima conferenza italiana su iOS/macOSX
+	\item Mentor presso \extLink{http://www.coderdojobrescia.it/}{CoderDojo Brescia}
 }
 
 
@@ -491,7 +498,7 @@ Docker, docker-compose, Linux administration, AWS services (S3, lambda, IoT, ECS
 %---------------------------------------------------------------------------------------
 %	META CONTACT
 %----------------------------------------------------------------------------------------
-\cvsection{CONTACT}
+\cvsection{CONTATTI}
 	
 \icontext{MapMarker}{12}{Via Tormini 74/O, Gavardo (BS), Italy}{black}\\[6pt]
 \icontext{MobilePhone}{12}{+39 329 2783809}{black}\\[6pt]
@@ -503,33 +510,33 @@ Docker, docker-compose, Linux administration, AWS services (S3, lambda, IoT, ECS
 %---------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\cvsection{EDUCATION}
+\cvsection{EDUCAZIONE}
 
 \cvmetaevent
 {2010 - 2013}
-{Master's Degree in Computer Science}
-{University of Brescia}
+{Laurea Magistrale in Ingegneria \mbox{Informatica}\\}
+{Università degli studi di Brescia}
 {}
 \cvmetaevent
 {2011 - 2012}
-{Exchange student in Computer Science}
+{Studente in visita, programma Erasmus\\}
 {LaSalle Barcelona, Ramon Llull University}
 {}
 \cvmetaevent
 {2006 - 2012}
-{Bachelor's Degree in Computer Science}
-{University of Brescia}
+{Laurea in Ingegneria dell'Informazione\\}
+{Università degli studi di Brescia}
 {}
 
 %---------------------------------------------------------------------------------------
 %	LANGUAGES
 %----------------------------------------------------------------------------------------
-\cvsection{LANGUAGES}
+\cvsection{LINGUE}
 \cvlist{
-	\item Italian (mother tongue)
-	\item English
-	\item Spanish
-	\item Catalan
+	\item Italiano (lingua madre)
+	\item Inglese
+	\item Spagnolo
+	\item Catalano
 }
 
 \vfill
