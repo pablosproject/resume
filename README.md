@@ -4,6 +4,11 @@
 
 This repo contains my personal resume code, built on top of the amazing work from [jankapunkt](https://github.com/jankapunkt/latexcv)
 
+# Build command
+
+- **EN**: `pdflatex eng/main.tex -jobname=Resume-$(date +"%Y-%m-%d")-eng`
+- **IT**: `pdflatex ita/main.tex -jobname=Resume-$(date +"%Y-%m-%d")-ita`
+
 ## License
 
 The MIT License (MIT)
