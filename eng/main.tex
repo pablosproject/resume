@@ -243,6 +243,14 @@
 	}
 }
 
+\newcommand{\cvsectionsmall}[1] {
+	\vspace{14pt}
+	\cvtext{
+		\textbf{\fontsize{14pt}{17pt}\selectfont{\textcolor{darkcol}{\uppercase{#1}}}}\\[-4pt]
+		\textcolor{maincol}{ \rule{0.1\textwidth}{2pt} } \\
+	}
+}
+
 %----------------------------------------------------------------------------------------
 %	META SKILL
 %----------------------------------------------------------------------------------------
@@ -295,18 +303,18 @@
 	}
 
 	\ifthenelse{\isempty{#6}}{}{
-		\vspace{4pt}
+		\vspace{2pt}
 		{#6}
 	}
 
 	\ifthenelse{\isempty{#7}}{}{
-		\vspace{4pt}
+		\vspace{2pt}
 		\cvtext{\textbf{Technologies include:}}\\
 		{#7}
 	}
 
 	\ifthenelse{\isempty{#8}}{}{
-		\vspace{4pt}
+		\vspace{2pt}
 		\cvtext{\textbf{Achievements include:}}\\
 		{#8}
 	}
@@ -356,17 +364,14 @@
 		\textcolor{black}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
 		\large{ \textcolor{black} {Senior Freelance Software Engineer} }
 	\end {center}
-\end{minipage} \\[14pt]
+\end{minipage} 
 
 %---------------------------------------------------------------------------------------
 %	PROFILE
 %----------------------------------------------------------------------------------------
-\cvsection{PROFILE}
-
-\cvtext{Software Engineering consultant with strong theoretical skills and a passion for OpenSource software.\\
-
+\cvtext{
+	Software Engineering consultant with strong theoretical skills and a passion for OpenSource software.\\
 More than ten years of experience building mobile and web applications. Working remotely since 2015.\\
-
 Customer-oriented and structured method of working, focused on quality and maintainability. Highly motivated to work in a team, both comfortable in big companies as in small teams.\\
 }
 
@@ -377,65 +382,21 @@ Customer-oriented and structured method of working, focused on quality and maint
 
 \cvevent
 	{Oct 2022 - Present}
-	{Senior Full-Stack Software Engineer }
+	{Senior Full-Stack Software Engineer And Tech Lead}
 	{\extLinkIcon{https://www.portchain.com/}{Portchain}}
 	{Copenhagen(DK) - Remote}
-	{Led development of a data platform enhancing coordination in the cargo industry, from system architecture to hands-on implementation. Oversaw a database migration project for improved efficiency.}
-	{\cvlist{
-		\item Portchain Connect (\extLink{https://www.portchain.com/portchain-connect/}{link})
-	}}
+	{Led the development of a data platform, \extLink{https://www.portchain.com/portchain-connect/}{Portchain Connect}, enhancing coordination in the cargo industry. This role involved everything from system architecture to hands-on implementation. Oversaw a database migration project for improved efficiency within Portchain Connect. Efficiently led a development team from both technical and managerial perspectives.}
+	{}
 	{}
 	{}
 
 \cvevent
-	{Jan 2021 - Jun 2022}
+	{Aug 2019 - Jun 2022}
 	{Mobile/Linux/FullStack Engineer}
 	{Contractor}
-	{Milan Area - Hybrid Remote}
-	{Worked on a variety of projects as a contractor.}
-	{\cvlist{
-		\item Joan, an integrated workplace management platform \textit{(FullStack Development)} (\extLink{https://getjoan.com/}{link})
-		\item Sunbell AI-Sun \textit{(iOS)} (\extLink{https://apps.apple.com/it/app/sunbell-ai-sun/id1462309592?platform=iphone}{link})
-		\item SatSearch \textit{(DevOps, FullStack Development)} (\extLink{https://satsearch.co/}{link})
-		\item PrenotaBanca \textit{(DevOps, FullStack Development, Linux)} (\extLink{https://www.masterchart.it/prenota-banca.html}{link})
-	}}
+	{European Union - Hybrid Remote}
+	{Led comprehensive product development initiatives for a range of clients, delivering high-quality solutions in mobile app development, full stack engineering, and IoT systems. Successfully implemented and managed projects, driving innovation and efficiency through DevOps practices, mentoring teams, and integrating advanced technologies across diverse industries.}
 	{}
-	{}
-
-\cvevent
-	{Mar 2021 - Jun 2021}
-	{Linux/FullStack Engineer}
-	{\extLinkIcon{https://41north.dev/}{41 North}}
-	{Full Remote}
-	{Developed a custom Linux distro for bartop retro-gaming solutions, integrating a backend application for legal ROM storage and distribution. More details available at  at \extLink{https://talentec.es}{this link}.}
-	{}
-	{}
-	{}
-
-\cvevent
-	{Jan 2020 - Dec 2020}
-	{Mobile and Full Stack Software Engineer}
-	{\extLinkIcon{https://codermine.com/}{Codermine}}
-	{Hybrid Remote}
-	{Led a development team in building mobile and web products for third-party clients. Mentored junior developers, introduced DevOps practices, and improved release cycles and automated testing. Notable projects include:}
-	{\cvlist{
-		\item Alarm system configuration app (\extLink{https://apps.apple.com/it/app/inxpect-security/id1334620177}{link})
-		\item Invoice trading platform (frontend and backend) (\extLink{https://cashme.it/}{link})
-		\item AI-based KPI prediction platform (\extLink{https://vedrai.com/en/}{link})
-	}}
-	{}
-	{}
-
-\cvevent
-	{Aug 2019 - Dec 2019}
-	{Mobile/FullStack Software Engineer}
-	{\extLinkIcon{https://www.palmabit.com/en}{Palmabit}}
-	{Hybrid Remote}
-	{Full-Stack consultant.}
-	{\cvlist{
-		\item Circular Economy based delivery service (\extLink{https://www.siwego.com/}{Link})
-		\item Bluetooth powered chat application (\extLink{https://apps.apple.com/it/app/forcatch/id1372788996}{link})
-	}}
 	{}
 	{}
 
@@ -443,19 +404,15 @@ Customer-oriented and structured method of working, focused on quality and maint
 	{Jul 2015 - Jul 2019}
 	{Mobile / Full Stack Software Engineer}
 	{\extLinkIcon{https://mobilejazz.com/}{MobileJazz}}
-	{Full Remote}
-	{Technical and managerial consultancy for US and European clients. Worked in several teams: iOS developer in the mobile team, NodeJS developer in the backend, and frontend developer in the web team. Responsible for DevOps, automation, and custom build solutions in each team. \\
-    Relevant examples of products developed: }
-	{\cvlist{
-		\item IoT custom light control solution (\extLink{https://www.simonelectric.com/intl/control-systems/scena}{link}, \extLink{https://mobilejazz.com/blog/how-we-made-remote-development-work-with-physical-devices/}{blog post}) 
-		\item Real-time noise monitoring platform (\extLink{http://wp.emmadb.com/}{link})
-		\item Rehab enhancement platform (\extLink{https://peerwell.co/}{link})
-		\item TENS remote control application (\extLink{https://hollywog.com/products/witouch}{link})
-		\item Tinder-like social networking application (\extLink{https://apps.apple.com/us/app/koko-dating-flirt-chat-app/id855200334}{link}) 	}}
+	{Barcelona (ES) - Full Remote}
+	{Technical and managerial consultancy for US and European clients. Worked in several teams: iOS developer in the mobile team, NodeJS developer in the backend, and frontend developer in the web team. Responsible for DevOps, automation, and custom build solutions in each team.}
+	{}
 	{}
 	{}
 
-For previous experiences, please refer to my \extLink{https://www.linkedin.com/in/paolo-tagliani-51248117/}{LinkedIn profile}.
+  \cvtext{For previous experiences, please refer to my \extLink{https://www.linkedin.com/in/paolo-tagliani-51248117/}{LinkedIn profile}.}
+
+	\vspace{-8pt}
 
 %---------------------------------------------------------------------------------------
 %	SKILLS
@@ -468,50 +425,40 @@ For previous experiences, please refer to my \extLink{https://www.linkedin.com/i
 	\textcolor{maincol}{\textit{Advanced}}: C, C++, Javascript, Go\\
 	\textcolor{maincol}{\textit{Familiar}}: Python, Ruby \\ 
 	\\
-	\textbf{DevOps}: GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
+	\textbf{Automation}: GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
 	\\
-	\textbf{Frameworks}: Cocoa, Cocoa Touch and iOS frameworks, NodeJS, NestJS, ExpressJS, Angular \\
+	\textbf{Frameworks/Libraries}: Cocoa, Cocoa Touch and iOS frameworks, NodeJS, NestJS, ExpressJS, Angular, React \\
 	\\
-	\textbf{DB}: MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search, TimeScaleDB \\
+	\textbf{Databases}: MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search, TimeScaleDB \\
 	\\
-	\textbf{Conainers}: Docker, Docker Compose, Kubernetes \\
+	\textbf{Containers}: Docker, Docker Compose, Kubernetes \\
 	\\
-	\textbf{Other skills}: Linux administration, AWS services (S3, lambda, IoT, ECS), cloud based server management (Digital Ocean, Linode)
+    \textbf{AWS}: S3, Lambda, IoT, SNS, ECS, ECR \\
 \end{tabular*}
  
 
-%---------------------------------------------------------------------------------------
-%	Projects
-%----------------------------------------------------------------------------------------
-\cvsection{Projects and achievements}
-\cvlist{
-	\item \textbf{US Patent} Hazard Recognition (\extLinkIcon{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2
-	}{Patent US11093747B2}), 
-	\item Founder of \extLinkIcon{http://pragmamark.org/}{PragmaMark}: first iOS/MacOSX Italian developer conference
-	\item Mentor at \extLinkIcon{http://www.coderdojobrescia.it/}{CoderDojo Brescia}
-}
 
 
 % hotfixes to create fake-space to ensure the whole height is used
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
-\vfill
-\mbox{}
+% \mbox{}
+% \vfill
+% \mbox{}
+% \vfill
+% \mbox{}
+% \vfill
+% \mbox{}
 \end{leftcolumn}
 \begin{rightcolumn}
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
-\vfill \vspace*{110pt}
+\vfill \vspace*{40pt}
 % \includegraphics[width=\linewidth]{untitled.jpg}	%trimming relative to image size
 
 %---------------------------------------------------------------------------------------
 %	META CONTACT
 %----------------------------------------------------------------------------------------
-\cvsection{CONTACT}
+\cvsectionsmall{CONTACT}
 	
 \icontext{MapMarker}{12}{Via Tormini 74/O, Gavardo (BS), Italy}{black}\\[6pt]
 \icontext{MobilePhone}{12}{+39 329 2783809}{black}\\[6pt]
@@ -521,9 +468,20 @@ For previous experiences, please refer to my \extLink{https://www.linkedin.com/i
 \iconhref{Linkedin}{12}{linkedin.com/in/paolo-tagliani}{https://www.linkedin.com/in/paolo-tagliani-51248117}{black}\\[6pt]
 
 %---------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\cvsectionsmall{LANGUAGES}
+\cvlist{
+	\item Italian (mother tongue)
+	\item English
+	\item Spanish
+	\item Catalan
+}
+
+%---------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
-\cvsection{EDUCATION}
+\cvsectionsmall{EDUCATION}
 
 \cvmetaevent
 {2010 - 2013}
@@ -542,14 +500,13 @@ For previous experiences, please refer to my \extLink{https://www.linkedin.com/i
 {}
 
 %---------------------------------------------------------------------------------------
-%	LANGUAGES
+%	Projects
 %----------------------------------------------------------------------------------------
-\cvsection{LANGUAGES}
+\cvsectionsmall{Achievements}\\
 \cvlist{
-	\item Italian (mother tongue)
-	\item English
-	\item Spanish
-	\item Catalan
+	\item \hspace*{-4pt} US Patent \extLink{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2}{Hazard Recognition} 
+	\item \hspace*{-4pt} 4Founder of \extLink{http://pragmamark.org/}{PragmaMark} 
+	\item \hspace*{-4pt} Mentor at \extLink{http://www.coderdojobrescia.it/}{CoderDojo Brescia} 
 }
 
 \vfill
