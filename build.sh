@@ -1,4 +1,8 @@
 #!/bin/sh
 
-pdflatex eng/main.tex -jobname=Resume-$(date +"%Y-%m-%d")-eng
-pdflatex ita/main.tex -jobname=Resume-$(date +"%Y-%m-%d")-ita
+#!/bin/sh
+docker build -t jankapunkt/latexcv:1.0 .
+
+#!/bin/sh
+IMAGE=jankapunkt/latexcv:1.0
+exec docker run --rm -i --user="$(id -u):$(id -g)" --net=none -v "$PWD":/data "$IMAGE" pdflatex --output-directory=$1 $1/main.tex
