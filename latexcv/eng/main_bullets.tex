@@ -9,7 +9,7 @@
 %	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 %	copies of the Software, and to permit persons to whom the Software is
 %	furnished to do so, subject to the following conditions:
-%	
+%
 %	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 %	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 %	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -17,7 +17,7 @@
 %	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 %	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 %	THE SOFTWARE.
-%	
+%
 %
 %-----------------------------------------------------------------------------------------------------------------------------------------------%
 
@@ -29,7 +29,7 @@
 %============================================================================%
 
 %we use article class because we want to fully customize the page and don't use a cv template
-\documentclass[10pt,A4]{article}	
+\documentclass[10pt,A4]{article}
 
 
 %----------------------------------------------------------------------------------------
@@ -37,7 +37,7 @@
 %----------------------------------------------------------------------------------------
 
 % we use utf8 since we want to build from any machine
-\usepackage[utf8]{inputenc}		
+\usepackage[utf8]{inputenc}
 
 %----------------------------------------------------------------------------------------
 %	LOGIC
@@ -57,13 +57,15 @@
 %\usepackage{cmbright}
 \usepackage[default]{raleway}
 \usepackage{fontawesome}
+\usepackage{enumitem}
+\setlist{nosep}
 %\usepackage{fetamont}
 %\usepackage[default]{gillius}
 %\usepackage[light,math]{iwona}
-%\usepackage[thin]{roboto} 
+%\usepackage[thin]{roboto}
 
 % set font default
-\renewcommand*\familydefault{\sfdefault} 	
+\renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 
 % more font size definitions
@@ -71,7 +73,7 @@
 
 %----------------------------------------------------------------------------------------
 %	FONT AWESOME ICONS
-%---------------------------------------------------------------------------------------- 
+%----------------------------------------------------------------------------------------
 
 % include the fontawesome icon set
 \usepackage{fontawesome}
@@ -88,22 +90,22 @@
 \setbox0=\hbox{#1}\parbox{\wd0}{\box0}\endgroup}
 
 % icon shortcut
-\newcommand{\icon}[3] { 							
+\newcommand{\icon}[3] {
 	\makebox(#2, #2){\textcolor{maincol}{\csname fa#1\endcsname}}
-}	
+}
 
 % icon with text shortcut
-\newcommand{\icontext}[4]{ 						
+\newcommand{\icontext}[4]{
 	\vcenteredhbox{\icon{#1}{#2}{#3}}  \hspace{2pt}  \parbox{0.9\mpwidth}{\textcolor{#4}{#3}}
 }
 
 % icon with website url
-\newcommand{\iconhref}[5]{ 						
+\newcommand{\iconhref}[5]{
     \vcenteredhbox{\icon{#1}{#2}{#5}}  \hspace{2pt} \href{#4}{\textcolor{#5}{#3}}
 }
 
 % icon with email link
-\newcommand{\iconemail}[5]{ 						
+\newcommand{\iconemail}[5]{
     \vcenteredhbox{\icon{#1}{#2}{#5}}  \hspace{2pt} \href{mailto:#4}{\textcolor{#5}{#3}}
 }
 
@@ -112,7 +114,7 @@
 %----------------------------------------------------------------------------------------
 
 % page outer frames (debug-only)
-% \usepackage{showframe}		
+% \usepackage{showframe}
 
 % we use paracol to display breakable two columns
 \usepackage{paracol}
@@ -134,7 +136,7 @@
 
 %----------------------------------------------------------------------------------------
 %	TABLE /ARRAY DEFINITIONS
-%---------------------------------------------------------------------------------------- 
+%----------------------------------------------------------------------------------------
 
 % extended aligning of tabular cells
 \usepackage{array}
@@ -147,7 +149,7 @@
 
 %----------------------------------------------------------------------------------------
 %	GRAPHICS DEFINITIONS
-%---------------------------------------------------------------------------------------- 
+%----------------------------------------------------------------------------------------
 
 %for header image
 \usepackage{graphicx}
@@ -155,16 +157,16 @@
 % use this for floating figures
 % \usepackage{wrapfig}
 % \usepackage{float}
-% \floatstyle{boxed} 
+% \floatstyle{boxed}
 % \restylefloat{figure}
 
-%for drawing graphics		
-\usepackage{tikz}				
+%for drawing graphics
+\usepackage{tikz}
 \usetikzlibrary{shapes, backgrounds,mindmap, trees}
 
 %----------------------------------------------------------------------------------------
 %	Color DEFINITIONS
-%---------------------------------------------------------------------------------------- 
+%----------------------------------------------------------------------------------------
 \usepackage{transparent}
 \usepackage{color}
 
@@ -188,7 +190,7 @@
 % to keep padding included in width calculations
 % can also be used for other boxes / environments
 \newcommand{\mpwidth}{\linewidth-\fboxsep-\fboxsep}
-	
+
 
 %============================================================================%
 %
@@ -263,7 +265,7 @@
 	\begin{tabular*}{1\mpwidth}{p{0.72\mpwidth}  r}
  		\textcolor{black}{\textbf{#1}} & \textcolor{maincol}{#2}\\
 	\end{tabular*}%
-	
+
 	\hspace{4pt}
 	\begin{tikzpicture}[scale=1,rounded corners=2pt,very thin]
 		\fill [lightcol] (0,0) rectangle (1\mpwidth, 0.15);
@@ -288,7 +290,7 @@
 % param 6: technologies include (optional)
 % param 7: achievements (optional)
 \newcommand{\cvevent}[8] {
-	
+
 	% we wrap this part in a parbox, so title and description are not separated on a pagebreak
 	% if you need more control on page breaks, remove the parbox
 	\parbox{\mpwidth}{
@@ -296,7 +298,7 @@
 	 		\textcolor{black}{\textbf{#2}} & \colorbox{maincol}{\makebox[0.28\mpwidth]{\textcolor{white}{#1}}} \\
 			\textcolor{maincol}{\textbf{#3}} \ifthenelse{\isempty{#4}}{}{\textcolor{maincol}{\emph{- #4}}}  & \\
 		\end{tabular*}\\[8pt]
-	
+
 		\ifthenelse{\isempty{#5}}{}{
 			\cvtext{#5}\\
 		}
@@ -349,9 +351,9 @@
 %
 %============================================================================%
 \begin{document}
-\columnratio{0.77}
+\columnratio{0.8}
 \setlength{\columnsep}{2.2em}
-\setlength{\columnseprule}{4pt}
+\setlength{\columnseprule}{2pt}
 \colseprulecolor{lightcol}
 \begin{paracol}{2}
 \begin{leftcolumn}
@@ -364,7 +366,7 @@
 		\textcolor{black}{ \rule{0.1\textwidth}{1.25pt} } \\[4pt]
 		\large{ \textcolor{black} {Senior Software Engineer} }
 	\end {center}
-\end{minipage} 
+\end{minipage}
 
 %---------------------------------------------------------------------------------------
 %	PROFILE
@@ -385,7 +387,12 @@
 	{Senior Full-Stack Software Engineer And Tech Lead}
 	{\extLinkIcon{https://www.portchain.com/}{Portchain}}
 	{ Copenhagen(DK) - Remote}
-	{Led the development of a data platform, \extLink{https://www.portchain.com/portchain-connect/}{Portchain Connect}, enhancing coordination in the cargo industry. This role involved everything from system architecture to hands-on implementation. Oversaw a database migration project for improved efficiency within Portchain Connect. Efficiently led a development team from both technical and managerial perspectives.}
+	{\begin{itemize}
+        \item Led the development of Portchain Connect Alignment Tools, collaborating closely with the product team to implement vertical features.
+        \item Coordinated and led a data model migration project that streamlined data processes and enhanced data integrity.
+        \item Managed and mentored a team of 5 developers, fostering a collaborative and innovative work environment.
+        \item \textbf{Stack}: Node, Express, Typescript, Python, PostgreSQL, PostGIS, Docker, AWS
+    \end{itemize}}
 	{}
 	{}
 	{}
@@ -395,7 +402,13 @@
 	{Full-Stack Software Engineer}
 	{Contractor}
 	{European Union - Hybrid Remote}
-	{Led comprehensive product development initiatives for a range of clients as long-term contractor (6 months to a year), delivering high-quality solutions in mobile app development, full stack engineering, and IoT systems. Successfully implemented and managed projects, driving innovation and efficiency through DevOps practices, mentoring teams, and integrating advanced technologies across diverse industries.}
+	{\begin{itemize}
+        \item Led full-stack development projects for various EU clients, specializing in Angular-based web applications with robust backend integrations.
+        \item Built scalable enterprise solutions using Angular, leveraging advanced features like lazy loading, state management, and custom component libraries.
+        \item Demonstrated versatility across multiple technologies including TypeScript, Node.js, Angular, Python, and AWS, while implementing CI/CD pipelines and DevOps best practices to ensure reliable deployments.
+    \end{itemize}}
+	{}
+	{}
 	{}
 	{}
 	{}
@@ -405,7 +418,14 @@
 	{Mobile / Full-Stack Software Engineer}
 	{\extLinkIcon{https://mobilejazz.com/}{MobileJazz}}
 	{Barcelona (ES) - Full Remote}
-	{Technical and managerial consultancy for US and European clients. Worked in several teams: iOS developer in the mobile team, NodeJS developer in the backend, and frontend developer in the web team. Responsible for DevOps, automation, and custom build solutions in each team.}
+	{\begin{itemize}
+		\item Technical and managerial consultancy for US and European clients.
+		\item Worked in several teams: iOS developer in the mobile team, NodeJS developer in the backend, and frontend developer in the web team.
+		\item Responsible for DevOps, automation, and custom build solutions in each team.
+		\item \textbf{Stack}: Swift, Objective-C, NodeJS, NestJS, Angular, Docker, AWS
+	\end{itemize}}
+	{}
+	{}
 	{}
 	{}
 	{}
@@ -424,16 +444,12 @@
 	\textbf{Programming Languages}\\
 	\textcolor{maincol}{\textit{Expert}}: Typescript, Swift, Objective-C/C++ \\
 	\textcolor{maincol}{\textit{Advanced}}: C, C++, Javascript, Go\\
-	\textcolor{maincol}{\textit{Familiar}}: Python, Ruby \\ 
+	\textcolor{maincol}{\textit{Familiar}}: Python, Ruby \\
 	\\
 	\textbf{Automation}: GitHub Actions, Gitlab CI/CD Pipelines, Travis CI \\
-	\\
-	\textbf{Frameworks/Libraries}: Cocoa, Cocoa Touch and iOS frameworks, NodeJS, NestJS, ExpressJS, Angular, React \\
-	\\
+	\textbf{Frameworks/Libraries}: NodeJS, NestJS, ExpressJS, Angular, React, Cocoa, Cocoa Touch and iOS frameworks \\
 	\textbf{Databases}: MySQL, PostgreSQL, SQLite, MongoDB, Elastic Search, TimeScaleDB \\
-	\\
 	\textbf{Containers}: Docker, Docker Compose, Kubernetes \\
-	\\
     \textbf{AWS}: S3, Lambda, IoT, SNS, ECS, ECR \\
 \end{tabular*}
 
@@ -451,20 +467,22 @@
 %---------------------------------------------------------------------------------------
 %	META IMAGE
 %----------------------------------------------------------------------------------------
-\vfill \vspace*{60pt}
+\vfill \vspace*{160pt}
 % \includegraphics[width=\linewidth]{untitled.jpg}	%trimming relative to image size
 
 %---------------------------------------------------------------------------------------
 %	META CONTACT
 %----------------------------------------------------------------------------------------
 \cvsectionsmall{CONTACT}
-	
-\icontext{MapMarker}{12}{Via Tormini 74/O, Gavardo (BS), Italy}{black}\\[6pt]
-\icontext{MobilePhone}{12}{+39 329 2783809}{black}\\[6pt]
-\iconemail{Envelope}{12}{pablosproject@gmail.com}{pablosproject@gmail.com}{black}\\[6pt]
-\iconhref{Globe}{12}{pablosproject.com}{https://www.pablosproject.com}{black}\\[6pt]
-\iconhref{Github}{12}{github.com/pablosproject}{https://github.com/pablosproject}{black}\\[6pt]
-\iconhref{Linkedin}{12}{linkedin.com/in/paolo-tagliani}{https://www.linkedin.com/in/paolo-tagliani-51248117}{black}\\[6pt]
+
+\begin{small}
+\icontext{MapMarker}{12}{Via Tormini 74/O, Gavardo (BS), Italy}{black}\\[2pt]
+\icontext{MobilePhone}{12}{+39 329 2783809}{black}\\[2pt]
+\iconemail{Envelope}{12}{pablosproject@gmail.com}{pablosproject@gmail.com}{black}\\[2pt]
+\iconhref{Globe}{12}{pablosproject.com}{https://www.pablosproject.com}{black}\\[2pt]
+\iconhref{Github}{12}{github.com/pablosproject}{https://github.com/pablosproject}{black}\\[2pt]
+\iconhref{Linkedin}{12}{linkedin.com/in/paolo-tagliani}{https://www.linkedin.com/in/paolo-tagliani-51248117}{black}\\[2pt]
+\end{small}
 
 %---------------------------------------------------------------------------------------
 %	LANGUAGES
@@ -482,6 +500,7 @@
 %----------------------------------------------------------------------------------------
 \cvsectionsmall{EDUCATION}
 
+\begin{small}
 \cvmetaevent
 {2010 - 2013}
 {Master's Degree in Computer Science}
@@ -497,20 +516,22 @@
 {Bachelor's Degree in Computer Science}
 {University of Brescia}
 {}
+\end{small}
 
 %---------------------------------------------------------------------------------------
 %	Projects
 %----------------------------------------------------------------------------------------
 \cvsectionsmall{Achievements}\\
+\begin{small}
 \cvtext{
 	• US Patent \extLink{https://patents.google.com/patent/US11093747B2/en?oq=US11093747B2}{Hazard Recognition} \\
 	• 4Founder of \extLink{http://pragmamark.org/}{PragmaMark} \\
-	• Mentor at \extLink{http://www.coderdojobrescia.it/}{CoderDojo Brescia} 
+	• Mentor at \extLink{http://www.coderdojobrescia.it/}{CoderDojo Brescia}
 }
+\end{small}
 
 \vfill
 
 \end{rightcolumn}
 \end{paracol}
 \end{document}
-
